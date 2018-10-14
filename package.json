@@ -1,0 +1,50 @@
+{
+	"name": "is-gtld",
+	"version": "1.0.0",
+	"description": "Check if a value is a valid gTLD.",
+	"license": "MIT",
+	"repository": "chrisvogt/is-gtld",
+	"author": {
+		"name": "Chris Vogt",
+		"email": "mail@chrisvogt.me",
+		"url": "https://www.chrisvogt.me"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"test": "xo && nyc ava"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"check",
+		"detect",
+		"domain",
+		"domains",
+		"gTLD",
+		"gTLDs",
+		"ICANN",
+		"tld",
+		"validate"
+	],
+	"dependencies": {
+		"gtlds": "^2.0.0"
+	},
+	"devDependencies": {
+		"ava": "^0.25.0",
+		"codecov": "^3.0.0",
+		"nyc": "^12.0.0",
+		"xo": "^0.21.0"
+	},
+	"nyc": {
+		"reporter": [
+			"lcov",
+			"text"
+		]
+	},
+	"xo": {
+		"space": true
+	}
+}
